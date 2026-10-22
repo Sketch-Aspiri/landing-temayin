@@ -1,0 +1,14 @@
+/*
+ * Tailwind v4 sin preflight: solo tema y utilidades, para no reiniciar los
+ * estilos propios de styles.css. Las utilidades quedan en su capa, así que
+ * styles.css (sin capa) manda cuando ambos tocan el mismo elemento.
+ */
+@layer theme, utilities;
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css' layer(utilities);
+
+/* Tokens que usan los componentes estilo shadcn (ring-ring, ring-offset-background). */
+@theme {
+  --color-ring: #ffd88b;
+  --color-background: #081b22;
+}
