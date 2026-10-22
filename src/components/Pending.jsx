@@ -2,7 +2,6 @@ const ITEMS = [
   'Cifras de impacto (alumnos, visitantes, ventas): por definir con el corporativo.',
   'Licencia y derechos de uso del arte generado con ChatGPT (IA).',
   'Revisión cultural con especialistas y hablantes de maya yucateco.',
-  'URL pública de la demo ([URL_VERCEL]) y comportamiento de Esc dentro del juego incrustado.',
   'Cotejar los datos de Toh de esta página con las fichas del juego y su fuente exacta.',
   'Asignación de jefe por mundo (aquí se usa el orden de la lista).',
   'Pruebas en teléfonos físicos.',

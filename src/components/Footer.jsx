@@ -1,4 +1,4 @@
-import { AUTOR, CONTACTO } from '../config.js'
+import { AUTOR, CONTACTO, DEMO_URL } from '../config.js'
 
 export default function Footer() {
   return (
@@ -7,6 +7,7 @@ export default function Footer() {
         <p style={{ margin: 0, fontWeight: 800, color: 'var(--cream)', fontSize: 16 }}>Obra independiente; no es un producto oficial del Tren Maya ni del INAH.</p>
         <p style={{ margin: 0 }}>Contenido elaborado a partir de fuentes públicas, citadas página por página. Arte generado con ChatGPT (IA). Fotos reales de Wikimedia Commons con autor, licencia y enlace en cada ficha. Mapa esquemático con referencia de Natural Earth y © colaboradores de OpenStreetMap.</p>
         <p style={{ margin: 0 }}>Creado por {AUTOR} · <a href={'mailto:' + CONTACTO}>{CONTACTO}</a></p>
+        {DEMO_URL && <p style={{ margin: 0 }}>Juega la demo: <a href={DEMO_URL} target="_blank" rel="noopener noreferrer">{DEMO_URL.replace(/^https?:\/\//, '')}</a></p>}
         <p style={{ margin: 0 }}>Las grecas son ornamento de fantasía y no representan glifos con significado.</p>
       </div>
     </footer>
