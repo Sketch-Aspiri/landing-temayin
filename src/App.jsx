@@ -7,6 +7,7 @@ import Riddle from './components/Riddle.jsx'
 import Axes from './components/Axes.jsx'
 import Rigor from './components/Rigor.jsx'
 import Modes from './components/Modes.jsx'
+import Reviews from './components/Reviews.jsx'
 import Arrival from './components/Arrival.jsx'
 import Pending from './components/Pending.jsx'
 import Footer from './components/Footer.jsx'
@@ -25,6 +26,7 @@ export default function App() {
         <Axes />
         <Rigor />
         <Modes />
+        <Reviews />
         <Arrival />
         <Pending />
       </main>

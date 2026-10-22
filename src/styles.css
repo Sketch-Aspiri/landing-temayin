@@ -328,3 +328,26 @@ img { max-width: 100%; height: auto; }
   gap: 8px;
   font-family: inherit;
 }
+
+/* Reseñas */
+.review-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 28px; align-items: start; }
+.review-summary { margin: 0 0 14px; font-size: 18px; }
+.review-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; max-height: 560px; overflow-y: auto; }
+.review-card { border-radius: 16px; padding: 16px 18px; display: flex; flex-direction: column; gap: 6px; }
+.review-stars { color: var(--brick); font-size: 20px; letter-spacing: 2px; }
+.review-text { margin: 0; font-size: 16px; line-height: 1.5; overflow-wrap: anywhere; }
+.review-meta { margin: 0; font-size: 14px; font-weight: 800; }
+.review-form { border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 14px; }
+.review-field { display: flex; flex-direction: column; gap: 6px; font-weight: 800; border: 0; padding: 0; margin: 0; }
+.review-field input[type='text'], .review-field textarea { font: inherit; font-weight: 400; min-height: 46px; padding: 10px 12px; border-radius: 10px; border: 2px solid var(--line-soft); background: #fff; color: var(--ink); }
+.review-field small { font-weight: 400; text-align: right; }
+.review-rating { flex-direction: row; flex-wrap: wrap; align-items: center; gap: 4px; }
+.review-rating legend { padding: 0; margin-bottom: 6px; }
+.review-star { position: relative; cursor: pointer; font-size: 34px; line-height: 1; color: var(--brick); min-width: 44px; min-height: 44px; display: grid; place-items: center; }
+.review-star input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.review-star:focus-within { outline: 3px solid var(--amber); border-radius: 8px; }
+.review-trap { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.review-msg { margin: 0; font-weight: 800; }
+.review-msg--error { color: #8c1d1d; }
+.review-msg--ok { color: var(--ink); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }

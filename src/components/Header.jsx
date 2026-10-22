@@ -5,6 +5,7 @@ const LINKS = [
   ['#ejes', 'Ejes'],
   ['#rigor', 'Rigor'],
   ['#modos', 'Jugar'],
+  ['#resenas', 'Reseñas'],
   ['#llegada', 'Llegada'],
 ]
 
