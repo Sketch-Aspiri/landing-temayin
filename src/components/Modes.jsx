@@ -3,7 +3,7 @@ import { asset } from '../assets.js'
 import { DEMO_URL } from '../config.js'
 import ImageSlot from './ImageSlot.jsx'
 
-const MODES = [['jugar', 'Para jugar'], ['instituciones', 'Para instituciones']]
+const MODES = [['jugar', 'Para jugar'], ['instituciones', 'Para el Tren Maya']]
 const FOCUS_DELAY_MS = 100
 
 function initialMode() {
@@ -129,25 +129,43 @@ function PlayPanel() {
   )
 }
 
-const IMPACT = ['Alumnos', 'Visitantes', 'Ventas']
+const PLAN = [
+  ['Fase 1 · Validación', 'Revisión cultural con especialistas y hablantes de maya yucateco; acuerdo de marca y uso de imagen con el corporativo.'],
+  ['Fase 2 · Piloto', 'Demo jugable en una ruta o estación, con código QR en cartelería y en pantallas a bordo, durante un periodo acotado.'],
+  ['Fase 3 · Medición', 'Evaluar jugadores, tiempo de juego y satisfacción; ajustar contenido y dificultad con esos datos.'],
+  ['Fase 4 · Oficial', 'Si el piloto resulta, versión oficial del Tren Maya, con más idiomas y más mundos a lo largo de la ruta.'],
+]
+
+const IMPACT = ['Turistas que juegan', 'Tiempo medio de juego', 'Satisfacción del viajero']
 
 function InstitutionsPanel() {
   const p = { margin: 0, fontSize: 17, lineHeight: 1.55 }
   return (
     <div role="tabpanel" id="panel-instituciones" aria-labelledby="tab-instituciones" tabIndex={0} style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(min(100%,320px),1fr))', gap: 24, alignItems: 'start', outline: 'none' }}>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-        <h3 className="card-title">Una base que puede crecer</h3>
-        <p style={p}>El juego corre sin instalación y su contenido vive en datos: fichas, páginas del cuaderno y acertijos se pueden ampliar con especialistas locales.</p>
-        <p style={p}>El marco de coautoría con comunidades es una aspiración; hoy es una invitación abierta.</p>
+        <h3 className="card-title">Un juego para el viaje</h3>
+        <p style={p}>Temayin convierte el recorrido en una aventura: cada mundo del juego corresponde a un tramo de la ruta, con datos de cultura y territorio maya.</p>
+        <p style={p}>Se propone como juego oficial para los turistas que viajan en el tren, en el trayecto o en la espera.</p>
       </div>
       <div className="note" style={{ borderRadius: 20, padding: '24px 24px 26px', display: 'flex', flexDirection: 'column', gap: 10 }}>
-        <h3 className="note-title" style={{ fontSize: 26, textAlign: 'center' }}>Para escuelas y museos</h3>
+        <h3 className="note-title" style={{ fontSize: 26, textAlign: 'center' }}>Por qué encaja en el tren</h3>
         <ul className="bullets" style={{ gap: 8, fontSize: 16, lineHeight: 1.55 }}>
-          <li>El cuaderno de Toh sirve como guía de clase: cada página cita su fuente.</li>
-          <li>Los acertijos de numeración maya funcionan como actividad sin castigo por error.</li>
+          <li>Se juega en el teléfono del viajero, sin instalar nada: basta un código QR.</li>
+          <li>Partidas cortas, pensadas para un trayecto.</li>
+          <li>Refuerza la identidad del destino y la cultura maya con fuentes citadas.</li>
           <li>Las leyendas se presentan como relatos tradicionales, no como hecho.</li>
-          <li>Basta un navegador en el aula o en sala.</li>
         </ul>
+      </div>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+        <h3 className="card-title">Plan por fases</h3>
+        <ol style={{ margin: 0, paddingLeft: 0, listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10 }}>
+          {PLAN.map(([t, d]) => (
+            <li key={t} style={{ display: 'flex', flexDirection: 'column', gap: 2, borderBottom: '1px solid var(--line)', paddingBottom: 8 }}>
+              <strong style={{ color: 'var(--gold)' }}>{t}</strong>
+              <span style={{ fontSize: 16, lineHeight: 1.5 }}>{d}</span>
+            </li>
+          ))}
+        </ol>
       </div>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
         <h3 className="card-title">Indicadores de impacto</h3>

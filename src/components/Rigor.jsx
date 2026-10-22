@@ -23,7 +23,7 @@ export default function Rigor() {
             <li>El arte se generó con ChatGPT (IA).</li>
             <li>Las verificaciones se hicieron en navegadores emulados, no en teléfonos físicos.</li>
             <li>Solo español: todavía sin audio y sin maya yucateco.</li>
-            <li>Medición con estudiantes y cifras de impacto: por definir con el corporativo.</li>
+            <li>Medición con turistas y cifras de impacto: por definir con el corporativo.</li>
           </ul>
         </div>
       </div>

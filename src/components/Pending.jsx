@@ -1,5 +1,5 @@
 const ITEMS = [
-  'Cifras de impacto (alumnos, visitantes, ventas): por definir con el corporativo.',
+  'Cifras de impacto (turistas, tiempo de juego, satisfacción): por definir con el corporativo.',
   'Licencia y derechos de uso del arte generado con ChatGPT (IA).',
   'Revisión cultural con especialistas y hablantes de maya yucateco.',
   'Cotejar los datos de Toh de esta página con las fichas del juego y su fuente exacta.',

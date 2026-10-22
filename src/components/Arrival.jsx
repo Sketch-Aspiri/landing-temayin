@@ -40,8 +40,8 @@ function Collaboration() {
         <h3 className="note-title" style={{ fontSize: 24 }}>Propuesta de colaboración</h3>
         <ol style={{ margin: 0, paddingLeft: 22, display: 'flex', flexDirection: 'column', gap: 6, fontSize: 16, lineHeight: 1.5 }}>
           <li>Revisar el contenido con especialistas y hablantes de maya yucateco.</li>
-          <li>Definir juntos los indicadores de impacto.</li>
-          <li>Llevar el juego a escuelas y espacios culturales de la región.</li>
+          <li>Acordar marca, uso de imagen y los indicadores de impacto.</li>
+          <li>Probar un piloto para turistas en el tren y, si funciona, hacerlo juego oficial.</li>
         </ol>
       </div>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, alignItems: 'center' }}>
